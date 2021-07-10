@@ -3,6 +3,7 @@ import FormularioCadastro from "./components/FormularioCadastro/";
 import ListaDeNotas from "./components/ListaDeNotas/";
 import "./assets/App.css";
 import './assets/index.css';
+import ListaDeCategorias from "./components/ListaDeCategorias";
 
 
 class App extends Component {
@@ -34,9 +35,12 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNota={this.criarNota.bind(this)}/>
+        <main className="conteudo-principal">
+          <ListaDeCategorias />
         <ListaDeNotas 
         apagarNota={this.deletarNota.bind(this)}
         notas={this.state.notas}/>
+        </main>
       </section>
     );
   }

@@ -3,6 +3,10 @@
     background-color: #58A4B0;
 }
 
+.conteudo-principal {
+    flex-grow: 3;
+}
+
 :root {
     --primaria: #58A4B0;
     --secundaria: #373F51;
